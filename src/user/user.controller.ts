@@ -1,8 +1,8 @@
-import { Controller, Get, Param, Post, Req, Delete, Patch } from "@nestjs/common";
-import { Request } from "@nestjs/common";
+import { Controller, Delete, Get, Param, Patch, Post, Req } from '@nestjs/common';
+import { Request } from '@nestjs/common';
 
-@Controller("/user")
-export class userController{
+@Controller('user')
+export class UserController {
     @Get("/user")
     getUser(){
         return "I am a user";
